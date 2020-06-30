@@ -1,0 +1,164 @@
+/* pages/music/music.wxss */
+.musicbgi {
+  background-image: linear-gradient(to right , pink, skyblue);
+  /* filter: blur(20px); */
+}
+.music_top {
+  height: 400rpx;
+  display: flex;
+  position: relative;
+}
+.music_top_img {
+  margin: 20rpx;
+  float: left;
+  width: 300rpx;
+  height: 300rpx;
+  border-radius: 25rpx;
+  position: relative;
+}
+.img {
+  width: 100%;
+  height: 100%;
+}
+.play {
+  color: #fff;
+  font-size: 30rpx;
+  position: absolute;
+  top: 10rpx;
+  right: 15rpx;
+}
+.music_top_info {
+  margin-left: 50rpx;
+  margin-top: 20rpx;
+  float: right;
+  width: 500rpx;
+  height: 300rpx;
+}
+.playname {
+  font-size: 35rpx;
+  width: 300rpx;
+  color: #fff;
+  padding: 2px 0 0 6px;
+  display: -webkit-box;
+  /* -webkit-box-orient: vertical; */
+  -webkit-box-orient: vertical;
+  white-space: pre-wrap;
+  -webkit-line-clamp:2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.playinfos {
+  width: 100%;
+  height: 60rpx;
+  margin-top: 10rpx;
+}
+/* .playinfos image {
+  width: 50rpx;
+  height: 50rpx;
+  float: left;
+} */
+.playInfo {
+  font-size: 25rpx;
+  padding-left: 50rpx;
+  text-align: center;
+  line-height: 30px;
+}
+.music_intros {
+  width: 100%;
+  height: 100rpx;
+  margin-top: 40rpx;
+}
+.infoimg {
+  width: 50rpx;
+  height: 50rpx;
+  float: left;
+}
+.img1 {
+  float: right;
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 20rpx;
+}
+.music_intro {
+  font-size: 25rpx;
+  float: left;
+  width: 300rpx;
+  color: #fff;
+  padding: 2px 0 0 6px;
+  display: -webkit-box;
+  /* -webkit-box-orient: vertical; */
+  -webkit-box-orient: vertical;
+  white-space: pre-wrap;
+  -webkit-line-clamp:2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.img2 {
+  float: right;
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 20rpx;
+}
+.music_top_bottom {
+  display: flex;
+  width: 100%;
+  height: 50rpx;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.music_top_bottom image {
+  flex: 1;
+  float: right;
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 20rpx;
+}
+.music_bottom {
+  width: 100%;
+  height: 500%;
+  border-radius: 20px;
+  background-color: #fff;
+}
+.playlist {
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  margin: 5rpx 0 5rpx 0;
+}
+.playindex {
+  flex: 1;
+  line-height: 50px;
+  padding: 0 8rpx 0 20rpx;
+}
+.play_shows {
+  flex: 5;
+}
+.red {
+  color: red;
+}
+.play_name {
+  display: block;
+  font-size: 30rpx;
+}
+.play_info {
+  display: block;
+  font-size: 25rpx;
+  padding-top: 10rpx;
+  color: #ccc;
+}
+.video {
+  flex: 3;
+  text-align: center;
+  line-height: 50px;
+}
+.video image {
+  width: 50rpx;
+  height: 50rpx;
+  padding-top: 30rpx;
+}
+
+.play_menu {
+  flex: 1;
+  line-height: 50px;
+}

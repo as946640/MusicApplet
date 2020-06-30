@@ -1,0 +1,25 @@
+<!--components/sone-list/sone-list.wxml-->
+<view>
+  <view>
+    <text class="recommend_top">推荐歌单</text>
+    <text class="recommend_middle">为你精挑细选</text>
+    <button class="more" size="mini"><text class="recommend_middles">查看更多</text></button>
+  </view>
+  <scroll-view class="play" scroll-x enable-flex>
+    <block wx:for="{{playlist}}" wx:key="index" 
+      >
+      <view class="play_item" 
+      data-index="{{index}}" 
+      bindtap="gotomusic">
+        <image class="plya_img" src="{{item.picUrl}}"></  image>
+        <view>
+          <image src="/assets/images/home/play.png"   class="plya_imgs"></image>
+          <text class="play_count">{{item.playCount}}</text>
+        </view>
+        <view class="play_name">
+          <text class="play_name">{{item.name}}</text>
+        </view>
+        </view>
+    </block>
+</scroll-view>
+</view>

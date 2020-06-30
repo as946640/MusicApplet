@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "w-swiper": "../../components/w-swiper/w-swiper",
+    "w-menu": "./ChildComponents/menu/menu",
+    "w-sone-list": "../../components/sone-list/sone-list"
+
+  }
+}

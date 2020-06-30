@@ -1,0 +1,23 @@
+
+<view class="play_container" style="background: url({{picUrl}}) center/cover no-repeat"></view>
+<view class="play_marsk"></view>
+
+<view class="player_info">
+<!--封面信息-->
+  <view class="player_disc {{isPlaying? 'play' : ''}}">
+    <image class="playerimg rotation  {{isPlaying? '' : 'rotation_pay'}}" src="{{picUrl}}"></image>
+  </view>
+<!--进度条-->
+<view class="progress_bar">
+  <w-progress-bar  bind:misicEnd="onNext" />
+</view>
+<!--控制播放-->
+  <view class="control">
+    <text class="iconfont icon-shangyishoushangyige" bind:tap="onPrev"></text>
+    <text class="iconfont {{isPlaying ? 'icon-zanting' : 'icon-bofang'}} "
+          bind:tap="toggleplay" 
+          ></text>
+    <text class="iconfont icon-49xiayishou" bind:tap="onNext"></text>
+  </view>
+</view>
+

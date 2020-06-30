@@ -1,0 +1,6 @@
+<!-- 轮播图组件-->
+<w-swiper switerImgUrl="{{switerImgUrl}}"/>
+<!--菜单栏-->
+<w-menu />
+<!--歌单列表-->
+<w-sone-list playlist="{{playlist}}" />

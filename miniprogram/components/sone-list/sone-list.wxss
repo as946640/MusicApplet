@@ -1,0 +1,69 @@
+.recommend_top {
+  font-size: 30rpx;
+  color: #ccc;
+  display: block;
+  margin-top: 5rpx;
+}
+.recommend_middle {
+  font-size: 35rpx;
+  font-weight: 400;
+  display: block;
+  margin-top: 10rpx;
+  float: left;
+}
+.more {
+  border: 3rpx solid #ccc;
+  float: right;
+  border-radius: 25rpx;
+}
+.recommend_middles {
+  font-size: 30rpx;
+  font-weight: 400;
+}
+.play {
+  display: flex;
+  white-space: nowrap;
+  height: 150px;
+  /* flex-wrap: wrap; */
+}
+.play_item {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50rpx;
+  flex: 2;
+  margin: 5px;
+  position: relative;
+  -webkit-line-clamp: 2;
+  /* overflow: hidden; */
+}
+.plya_imgs {
+  height: 20%;
+  width: 20%;
+  position: absolute;
+  top: 3rpx;
+  left: 70rpx;
+}
+.plya_img {
+  height: 100%;
+  width: 100%;
+}
+.play_count {
+  font-size: 20rpx;
+  color: #fff;
+  position: absolute;
+  top: 10rpx;
+  right: 0rpx;
+}
+.play_name {
+  font-size: 26rpx;
+  width: 200rpx;
+  height: 80rpx;
+  padding: 2px 0 0 6px;
+  display: -webkit-box;
+  /* -webkit-box-orient: vertical; */
+  -webkit-box-orient: vertical;
+  white-space: pre-wrap;
+  -webkit-line-clamp:2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

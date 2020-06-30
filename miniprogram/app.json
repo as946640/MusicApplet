@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/publish/publish",
+    "pages/profile/profile",
+    "pages/music/music",
+    "pages/playsone/playsone"
+  ],
+  "requiredBackgroundModes": ["audio"],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#d43c33",
+    "navigationBarTitleText": "音乐",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#474747",
+    "selectedColor": "#d43c43",
+    "list": [
+    {
+      "pagePath": "pages/home/home",
+      "text": "音乐",
+      "iconPath": "/assets/images/tabbar/music.png",
+      "selectedIconPath": "/assets/images/tabbar/music_active.png"
+    },
+    {
+      "pagePath": "pages/publish/publish",
+      "text": "发布",
+      "iconPath": "/assets/images/tabbar/publish.png",
+      "selectedIconPath": "/assets/images/tabbar/publish_active.png"
+    },
+    {
+      "pagePath": "pages/profile/profile",
+      "text": "我的",
+      "iconPath": "/assets/images/tabbar/profile.png",
+      "selectedIconPath": "/assets/images/tabbar/profile_active.png"
+    }
+  ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

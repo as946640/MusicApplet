@@ -1,0 +1,43 @@
+<!--pages/home/ChildComponents/menu/menu.wxml-->
+<view class="menu">
+  <view class="menu-item">
+    <view class="sone">
+    <image src="/assets/images/menu/recommend.png" ></image>
+    </view>
+    <view class="menu-text">
+       <text>每日推荐</text>
+    </view>
+  </view>
+  <view class="menu-item">
+    <view class="sone">
+    <image src="/assets/images/menu/sonelist.png"></image>
+    </view>
+   <view class="menu-text">
+       <text>歌单</text>
+    </view>
+  </view>
+  <view class="menu-item">
+    <view class="sone">
+    <image src="/assets/images/menu/ranking.png"></image>
+    </view>
+   <view class="menu-text">
+       <text>排行榜</text>
+    </view>
+  </view>
+  <view class="menu-item">
+    <view class="sone">
+    <image src="/assets/images/menu/ccc.png"></image>
+    </view>
+   <view class="menu-text">
+       <text>电台</text>
+    </view>
+  </view>
+  <view class="menu-item">
+    <view class="sone">
+    <image src="/assets/images/menu/live.png"></image>
+    </view>
+   <view class="menu-text">
+       <text>直播</text>
+    </view>
+  </view>
+</view>

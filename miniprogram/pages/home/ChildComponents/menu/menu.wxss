@@ -1,0 +1,35 @@
+/* pages/home/ChildComponents/menu/menu.wxss */
+.menu {
+  display: flex;
+  padding-top: 15rpx;
+}
+.menu-item {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  margin-left: 20rpx;
+}
+.sone {
+  width: 100rpx;
+  height: 100rpx;
+  display: flex;
+  margin: auto;
+  justify-content: center;        
+  align-items:center;
+  background-color: #d5433c;
+  border-radius: 50%;
+}
+/* .image {
+  width: 50%;
+  height: 50%;
+} */
+.sone image {
+  width: 50%;
+  height: 50%;
+}
+.menu-text {
+  font-size: 30rpx;
+  text-align: center;
+  padding-top: 10rpx;
+  /* margin-left: 35rpx; */
+}

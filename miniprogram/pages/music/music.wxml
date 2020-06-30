@@ -1,0 +1,52 @@
+<!--pages/music/music.wxml-->
+<view class="musicbgi">
+  <view class="music_top">
+    <view class="music_top_img">
+      <image class="img" src="{{listInfo.coverImgUrl}}"></image>
+      <text class="play">{{listInfo.playCount}}</text>
+    </view>
+    <view class="music_top_info">
+      <text class="playname">{{listInfo.name}}</text>
+      <view class="playinfos">
+        <image src="/assets/images/music/info.png" class="infoimg"></image>
+        <text class="playInfo">用户名字</text>
+        <image src="/assets/images/music/left.png" class="img1"></image>
+      </view>
+      <view class="music_intros">
+         <text class="music_intro">{{listInfo.description}}</text>
+          <image src="/assets/images/music/left.png" class="img2"></image>
+      </view>
+    </view>
+    <view class="music_top_bottom">
+      <image src="/assets/images/music/comment.png" mode="aspectFit"
+      bind:tap="comment"></image>
+      <image src="/assets/images/music/share.png" mode="aspectFit" 
+      bind:tap="onShareAppMessage"></image>
+      <image src="/assets/images/music/download.png" mode="aspectFit"
+      bind:tap="download"></image>
+      <image src="/assets/images/music/multiple.png" mode="aspectFit"
+      bind:tap="multiple"></image>
+    </view>
+  </view>
+  <view class="music_bottom">
+    <block  wx:for="musiclist" 
+            wx:key="index"
+           >
+      <view class="playlist"
+            bind:tap="playclick"
+            data-index="{{index}}"
+            data-musicid='{{musiclist[index].id}}'>
+        <view class="playindex">{{index+1}}</view>
+        <view class="play_shows {{musiclist[index].id === playlistid ? 'red' : ''}}" 
+        >
+          <text class="play_name ">{{musiclist[index].name}}</text>
+          <text class="play_info">{{musiclist[index].al.name}}</text>
+       </view>
+          <view class="video">
+          <image src="/assets/images/music/plays.png" mode="aspectFit"></image>
+        </view>
+        <view class="play_menu" bind:tap="showActionSheet">...</view>
+      </view>
+    </block>
+  </view>
+</view>

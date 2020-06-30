@@ -1,0 +1,15 @@
+<swiper indicator-dots
+        indicator-color="#fff"
+        indicator-active-color="#d43c33"
+        interval="3000"
+        duration="300"
+        circular
+        autoplay>
+  <block  wx:for="{{switerImgUrl}}" 
+          wx:key="index"
+          >
+    <swiper-item>
+      <image src="{{item.url}}" mode="widhFix" class="image"></image>
+    </swiper-item>  
+  </block>
+</swiper>
